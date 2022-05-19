@@ -1,7 +1,9 @@
 import { version } from '../src';
+import pkg from '../package.json';
 
 describe('template', () => {
-  test('export', () => {
-    expect(version).toBe('0.1.0');
+  it('should match the `version` field of package.json', () => {
+    const expected = pkg.version;
+    expect(version).toBe(expected);
   });
 });

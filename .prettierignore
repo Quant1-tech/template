@@ -1,0 +1,10 @@
+.**/**
+
+node_modules
+dist
+lib
+esm
+coverage
+
+package.json
+package-lock.json
